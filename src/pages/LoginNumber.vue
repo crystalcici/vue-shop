@@ -38,6 +38,7 @@ import LoginPic from './common/LoginPic'
 import LoginText from './common/LoginText'
 import ConfirmButton from './common/ConfirmButton'
 import LoginInfo from './common/LoginInfo'
+// eslint-disable-next-line
 import axios from 'axios'
 export default {
   name: 'LoginNumber',
@@ -58,6 +59,10 @@ export default {
     loginConfirm () {
       if (this.username && this.password) {
         // axios请求post
+        axios.post('/register', {
+          username: this.username,
+          password: this.password
+        })
       }
     }
   }

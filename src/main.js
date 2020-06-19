@@ -3,7 +3,6 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import fastClick from 'fastclick'
 import Vant from 'vant'
 import 'vant/lib/index.css'
 import 'babel-polyfill'
@@ -13,7 +12,6 @@ import './assets/styles/iconfont.css'
 
 Vue.use(Vant)
 Vue.config.productionTip = false
-fastClick.attach(document.body)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

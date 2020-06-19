@@ -1,8 +1,8 @@
 <template>
     <div class="login-other">
-        <div class="login-box"></div>
-        <div class="login-box"></div>
-        <div class="login-box"></div>
+        <div class="iconfont login-box">&#xe883;</div>
+        <div class="iconfont login-box">&#xe885;</div>
+        <div class="iconfont login-box">&#xe882;</div>
     </div>
 </template>
 
@@ -18,8 +18,6 @@ export default {
         display: flex
         justify-content: center
         .login-box
-            height: 0.5rem
-            width: 1.2rem
-            border: 1px solid black
-            margin: 0 .6rem
+            margin: 0 0.8rem
+            font-size: .5rem
 </style>
