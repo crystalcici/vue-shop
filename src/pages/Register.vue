@@ -69,7 +69,7 @@ export default {
         })
       }
       if (rulg.test(this.username) === false || !rulg.test(this.password) === false || !rulg.test(this.ConfirmPwd) === false) {
-        this.$toast('sb，请重新输入')
+        this.$toast('格式正确,请重新输入')
       }
     }
   }

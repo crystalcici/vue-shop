@@ -56,13 +56,17 @@ export default {
     LoginInfo
   },
   methods: {
-    loginConfirm () {
-      if (this.username && this.password) {
-        // axios请求post
-        axios.post('/register', {
+    async loginConfirm () {
+      const rulg = new RegExp(/^.{6,16}$/)
+      if (rulg.test(this.username) && rulg.test(this.password)) {
+        const res = await axios.post('/login', {
           username: this.username,
           password: this.password
         })
+        // 后端返回的msg
+        this.$toast(res.data.msg)
+      } else {
+        this.$toast('格式不正确，重新输入')
       }
     }
   }

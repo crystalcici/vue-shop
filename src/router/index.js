@@ -18,6 +18,11 @@ export default new Router({
       path: '/register',
       name: 'Register',
       component: () => import('@/pages/register')
+    },
+    {
+      path: '/userInfo',
+      name: 'userInfo',
+      component: () => import('@/userpages/userInfo')
     }
   ]
 })
