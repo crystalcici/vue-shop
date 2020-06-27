@@ -23,6 +23,11 @@ export default new Router({
       path: '/userInfo',
       name: 'userInfo',
       component: () => import('@/userpages/userInfo')
+    },
+    {
+      path: '/firstMenu',
+      name: 'firstMenu',
+      component: () => import('@/userpages/firstMenu')
     }
   ]
 })
